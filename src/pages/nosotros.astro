@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="es">
@@ -46,6 +47,9 @@ import Layout from "../layouts/Layout.astro";
                 </span>
         </div>
     </body>
+   <!--  <div class="footer">
+        <Footer/>
+    </div>-->
     </Layout>
 </html>
 <style>
@@ -114,6 +118,9 @@ import Layout from "../layouts/Layout.astro";
      font-weight: 500;
      align-content: center;
      padding: 1.5em;
+     background-image: url("../img/background2.png");
+        background-size: contain;
+        background-position: center;
     }
     .num2{
         background-image: url("../img/EdwinLinkedIn2.jpg");
@@ -127,6 +134,9 @@ import Layout from "../layouts/Layout.astro";
         height: auto;
         /*background-color: rgb(255, 226, 65);*/
         background-color: gold;
+        background-image: url("../img/background2.png");
+        background-size: contain;
+        background-position: center;
         border-radius: 1em;
         padding: 1.5em;
         margin: auto;
@@ -163,6 +173,6 @@ import Layout from "../layouts/Layout.astro";
     width: 80%; /* Controla el ancho de la barra */
     margin: 20px auto; /* Centra la barra horizontalmente */
     border-radius: 5px; /* Hace que los bordes de la barra sean redondeados */
-    opacity: 0.5; /* C
+    opacity: 0.5;
     }
 </style>
