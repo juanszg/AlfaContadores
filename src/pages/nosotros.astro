@@ -1,0 +1,167 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <Layout title="Contacto-Astro">
+      <div class="header">
+          <Header />
+      </div>
+      <body>
+        <div class="flex">
+            <div class="num1">
+                <p>
+                   <span>Edwin Reyes</span><hr class="custom"><br>
+                    Contador con <b>8 años de experiencia</b> en convertir números en
+                    soluciones claras y deducibles. Especialista en hacer que
+                    las finanzas hablen tu idioma, ya sea para pymes o personas
+                    físicas. <br><br>
+                    
+                    Mi mayor habilidad es <b>transformar caos fiscal en
+                    tranquilidad</b>, con un toque de creatividad y mucho
+                    profesionalismo.<br><br>
+
+                    Si hay un recibo perdido o un gasto que
+                    necesita ser deducible, yo soy tu persona. <br><br>
+                    
+                </p>
+            </div>
+            <div class="num2">
+
+            </div>
+        </div>
+        <div class="experiencia">
+            <span>Experiencia laboral</span>  <span class="info">Ex colaborador del SAT. He trabajado con
+                clientes como Comercializadora IBANJA, BAGHEERA Rooftop, Bar
+                Bunny, y Monkey, además de constructoras y despachos legales.<br><br>
+                Atiendo a profesionales de diversas industrias: médicos,
+                abogados, choferes, ingenieros, y más.
+                </span>
+        </div>
+    </body>
+    </Layout>
+</html>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-family: ubuntu;
+        font-weight: 900;
+        width: 100%;
+        height: 200vh;
+        background-image: url("../img/ALFA-bg.jpg");
+        background-size: contain;
+        background-repeat: repeat-y;
+    }
+    body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el color y la opacidad aquí */
+    z-index: 1; /* Coloca la superposición sobre la imagen */
+    }
+    body > * {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté encima de la superposición */
+}
+.header{
+    z-index: 3;
+}
+@media (max-width:1055px){
+    body {
+        height: 270vh;
+    }
+    body::before{ 
+    height: 270vh;
+}
+}
+
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: auto;
+        overflow: none;
+        flex-direction: row;
+    }
+    .flex div {
+        width: 480px;
+        height: auto;
+        margin: 10px;
+        background-color: gold;
+        border-radius: 1em;
+    }
+    .num1{
+     font-size: 1.2em;
+     font-weight: 500;
+     align-content: center;
+     padding: 1.5em;
+    }
+    .num2{
+        background-image: url('../img/EdwinLinkedin2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 500px !important;
+    }
+    .experiencia{
+        width: 85%;
+        height: auto;
+        /*background-color: rgb(255, 226, 65);*/
+        background-color: gold;
+        border-radius: 1em;
+        padding: 1.5em;
+        margin: auto;
+        margin-top: 6em;
+   
+    }
+    .info{
+        color: black;
+        text-shadow: none;
+        margin-left: 0%;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    b{
+        font-weight: 900;
+    }
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 900;
+        border-radius: 1em;
+        /*border: 1.5px solid rgb(0, 0, 0);*/
+        padding: 1em;
+        text-align: center;
+        text-shadow: 2px 1px 2px rgb(35, 35, 35);
+        color: white;
+    }
+    .custom{
+        border: none; /* Elimina el borde por defecto */
+    height: 3px; /* Controla el grosor de la barra */
+    background-color:goldenrod; /* Cambia el color de la barra */
+    width: 80%; /* Controla el ancho de la barra */
+    margin: 20px auto; /* Centra la barra horizontalmente */
+    border-radius: 5px; /* Hace que los bordes de la barra sean redondeados */
+    opacity: 0.5; /* C
+    }
+</style>

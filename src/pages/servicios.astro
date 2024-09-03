@@ -1,0 +1,493 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import AlfaLogo from "../img/ALFA_Perfect_Logo.png";
+---
+
+<html lang="es"></html>
+<Layout title="Servicios-ALFA">
+    <body>
+        <Header />
+        <div class="logo"></div>
+        <div class="iconos-flex">
+            <div class="carta">
+                <div class="icono1"></div>
+                <div class="back1">
+                    <p class="especial">
+                        <b>SERVICIOS</b><br /><br /> • Consultoria<br /> ...
+                    </p>
+                </div>
+            </div>
+            <!-- segunda -->
+            <div class="carta">
+                <div class="icono2"></div>
+                <div class="back2">
+                    <p class="especial">
+                        <b>SAT</b><br /><br /> • Tramites con el SAT <br /> • Aclaraciones
+                        ...
+                    </p>
+                </div>
+            </div>
+            <!-- tercera -->
+            <div class="carta">
+                <div class="icono3"></div>
+                <div class="back3">
+                    <p class="especial">
+                        <b>CONSEJOS</b><br /><br />
+                        • Manera de sobrellevar tus finanzas<br />
+                        • Salud Financiera...
+                    </p>
+                </div>
+            </div>
+            <!-- cuarta -->
+            <div class="carta">
+                <div class="icono4"></div>
+                <div class="back4">
+                    <p class="especial">
+                        <b>CITAS</b><br><br>
+                        • Organizamos una cita para ver avances, resultados y modificar algun proceso, segun sea el caso.
+                    </p>
+                </div>
+            </div>
+            <!-- quinta -->
+            <div class="carta">
+                <div class="icono5"></div>
+                <div class="back5">
+                    <p class="especial">
+                        <b>FACTURACION</b><br><br>
+                        • Te ayudo con todo lo que necesites para facturar
+                    </p>
+                   </div>
+            </div>
+        </div>
+        <!--pimera-->
+        <!-- <div class="carta">
+                <div class="icono2"></div>
+                <div class="back2">HOLAAAAAAAAASAS</div>
+            </div>
+            <!--segunda
+            <div class="carta">
+                <div class="icono3"></div>
+                <div class="back3">AHOSDASDASD</div>
+            </div>
+             <!-- tercera 
+              <div class="carta">
+                  <div class="icono4"></div>
+                  <div class="back4">Lorem ipsum dolor sit amet !</div>
+              </div>
+             <!-- cuarta 
+              <div class="carta">
+                  <div class="icono5"></div>
+                  <div class="back5">KKAKAKAKAKAKAK</div>
+              </div>-->
+
+        <div id="servicios">
+            <p class="serv-c">
+                <span>Servicios contables</span>
+
+                • <b>Consulta contable</b> $250 <br /><br />
+
+                • <b>Consultas Fiscales</b> $450 <br /><br />
+
+                • <b>Estrategias Fiscales</b> $600 <br /><br />
+
+                • <b>Contabilidad Fiscal PF (Personas Fisicas)</b> de $800 a $1500
+                dependiendo su actividades <br /><br />
+
+                • <b>Contabilidad Fiscal PM (Personas Morales)</b> de $2500 a $5000
+                dependiendo su situación laboral <br /><br />
+
+                <span class="info">
+                    (La contabilidad incluye revisión y presentación de pago de
+                    impuestos, en dado caso de necesitar disminución de
+                    impuestos se le hace estrategia fiscal de deducible el costo
+                    adicional es del 5% al 10% dependiendo de la cantidad
+                    necesitada)
+                </span>
+
+                <br /><br />
+
+                • <b>Citas para el SAT</b> $150 Personas Fisicas y $250 Personas
+                Morales <br /><br />
+
+                • <b>Generación de Constancias de situación fiscal</b> $50 PF y $
+                70 PM <br /><br />
+
+                • <b>Generación de Opinión de cumplimiento</b> $550 pesos tanto para
+                PF y PM <br /><br />
+
+                • <b>Actualizaciones al RFC</b> $300 <br /><br />
+
+                • <b>Actualización de Firma electrónica vigente PF</b> $400 <br
+                /><br />
+
+                • <b>Actualización de Firma eléctrica vigente PM</b> $500 <br
+                /><br />
+
+                • <b>Actualización de Firma eléctrica caduca PF</b> (no mayor a un
+                año) $600 <br /><br />
+
+                • <b>Actualización de Firma eléctrica caduca PM</b> (Con la firma
+                vigente de Representante legal) $800<br /><br />
+            </p>
+        </div>
+    </body>
+</Layout>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-family: ubuntu;
+        font-weight: 900;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/ALFA-bg.jpg");
+        background-size: contain;
+        background-repeat: repeat-y;
+    }
+    #servicios {
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:2em;
+    }
+    .serv-c {
+       
+        /*background-color: rgb(255, 226, 65);*/
+        background-color: gold;
+        color: black;
+        width: 850px;
+        height: auto;
+        padding: 2em;
+        margin: 1.5em;
+        border-radius: 2em;
+
+        /*justify-content: center;
+		align-items: center;
+        flex-direction: row;*/
+    }
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 900;
+        border-radius: 1em;
+        /*border: 1.5px solid rgb(0, 0, 0);*/
+        padding: 1em;
+        text-align: center;
+        text-shadow: 2px 1px 2px rgb(35, 35, 35);
+        color: white;
+    }
+    .info {
+        color: black;
+        text-shadow: none;
+        margin-left: 0%;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    p {
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    .logo {
+        background-image: url("../img/ALFA_Perfect_Logo.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 260px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding-bottom: 3em;
+    }
+    .iconos-flex {
+        background-color: rgba(0, 0, 0, 0.9); 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+        margin: auto;
+    }
+    @media (max-width:734px){
+        .iconos-flex {
+            height: 600px;
+        }
+    }
+    @media (max-width:480px){
+        .iconos-flex {
+            height: 1200px;
+        }
+    }
+    .carta {
+        opacity: 100%;
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+    .carta > div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backface-visibility: hidden;
+        transition: 0.75s;
+        border-radius: 1em;
+    }
+    .carta .icono1 {
+        background-image: url("../img/servicios/alfaCliente3.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: perspective(500px) rotateY(0deg);
+    }
+    .carta .back1 {
+        background-color: gold;
+        transform: perspective(500px) rotateY(180deg);
+        text-align: center;
+    }
+    .carta:hover .icono1 {
+        transform: perspective(500px) rotateY(180deg);
+    }
+    .carta:hover .back1 {
+        transform: perspective(500px) rotateY(360deg);
+        border-radius: 10em;
+    }
+    /* SEGUNDO ICONO */
+    .carta .icono2 {
+        background-image: url("../img/servicios/alfaSAT2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: perspective(500px) rotateY(0deg);
+    }
+    .carta .back2 {
+        background-color: gold;
+        transform: perspective(500px) rotateY(180deg);
+        text-align: center;
+    }
+    .carta:hover .icono2 {
+        transform: perspective(500px) rotateY(180deg);
+    }
+    .carta:hover .back2 {
+        transform: perspective(500px) rotateY(360deg);
+        border-radius: 10em;
+    }
+    /* TERCERO */
+    .carta .icono3 {
+        background-image: url("../img/servicios/alfaHacks2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: perspective(500px) rotateY(0deg);
+    }
+    .carta .back3 {
+        background-color: gold;
+        transform: perspective(500px) rotateY(180deg);
+        text-align: center;
+    }
+    .carta:hover .icono3 {
+        transform: perspective(500px) rotateY(180deg);
+    }
+    .carta:hover .back3 {
+        transform: perspective(500px) rotateY(360deg);
+        border-radius: 10em;
+    }
+    /* CUARTA */
+    .carta .icono4 {
+        background-image: url("../img/servicios/alfaCalendario2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: perspective(500px) rotateY(0deg);
+    }
+    .carta .back4 {
+        background-color: gold;
+        transform: perspective(500px) rotateY(180deg);
+        text-align: center;
+    }
+    .carta:hover .icono4 {
+        transform: perspective(500px) rotateY(180deg);
+    }
+    .carta:hover .back4 {
+        transform: perspective(500px) rotateY(360deg);
+        border-radius: 10em;
+    }
+    /* QUINTO */
+    .carta .icono5 {
+        background-image: url("../img/servicios/alfaFactura2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: perspective(500px) rotateY(0deg);
+    }
+    .carta .back5 {
+        background-color: gold;
+        transform: perspective(500px) rotateY(180deg);
+        text-align: center;
+    }
+    .carta:hover .icono5 {
+        transform: perspective(500px) rotateY(180deg);
+    }
+    .carta:hover .back5 {
+        transform: perspective(500px) rotateY(360deg);
+        border-radius: 10em;
+    }
+    .especial{
+        font-size: .9em;
+    }
+    /*
+    .iconos{
+        background-color: transparent;
+        width: 130px; 
+        height: 130px;
+        perspective: 1000px; /* Añade profundidad a la animación 
+    }
+    .iconos-2{
+        background-color: transparent;
+        width: 130px; 
+        height: 130px;
+        perspective: 1000px; /* Añade profundidad a la animación 
+    }
+
+    .carta{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+    .carta-2{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+    .iconos:hover .carta {
+        transform: rotateY(180deg);
+    }
+    .iconos:hover .carta-2 {
+        transform: rotateY(180deg);
+    }
+    /*.iconos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 45px;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 300px;
+        margin: auto;
+    }
+
+    .icono1,
+    .back1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    .icono1 {
+        background-image: url("../img/servicios/alfaCliente.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 130px;
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .back1 {
+        width: 130px;
+        height: 130px;
+        border-radius: 10em;
+        transform: rotateY(180deg);
+        background-color: gold;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotateY(180deg);
+    }
+    .icono2,
+    .back2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    .icono2 {
+        background-image: url("../img/servicios/alfaFactura.png");
+        background-size: contain;
+        width: 130px;
+        height: 130px;
+    }
+    .back2 {
+        width: 130px;
+        height: 130px;
+        border-radius: 10em;
+        transform: rotateY(180deg);
+        background-color: gold;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotateY(180deg);
+    }
+
+    .icono3 {
+        background-image: url("../img/servicios/alfaSAT.png");
+        background-size: contain;
+        width: 130px;
+        height: 130px;
+    }
+    .icono3:hover {
+        transform: scale(1.4);
+    }
+    .icono4 {
+        background-image: url("../img/servicios/calendario.png");
+        background-size: contain;
+        width: 130px;
+        height: 130px;
+    }
+    .icono4:hover {
+        transform: scale(1.4);
+    }
+    .icono5 {
+        background-image: url("../img/servicios/alfaHacks.png");
+        background-size: contain;
+        width: 130px;
+        height: 130px;
+    }
+    .icono5:hover {
+        transform: scale(1.4);
+    }
+    @media (max-width: 535px) {
+        .icono1,
+        .icono2,
+        .icono3,
+        .icono4,
+        .icono5 {
+            width: 90px;
+            height: 90px;
+        }
+        .iconos {
+            gap: 15px;
+        }
+    }
+    /*.act{
+        background-image: url('../img/servicios.jpg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 100%;
+    }*/
+</style>

@@ -1,0 +1,268 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<html lang="es">
+    <Layout title="Contacto-Astro">
+        <div class="header">
+            <Header />
+        </div>
+        <body>
+           
+            <div class="titulo">
+                <h1>
+                    <span
+                        >Conecta conmigo para soluciones fiscales a tu medida</span
+                    >
+                </h1><br /><br />
+                <h3>
+                    <b
+                        >¿Necesitas alguien que maneje tus números como un
+                        artista maneja su lienzo?
+                    </b>¡Aquí estoy! Hago que la contabilidad sea algo más que
+                    números. ¡Hagamos que tus finanzas brillen!
+                </h3>
+            </div>
+            <div class="grid">
+                <div class="caja">
+                    <h2>
+                        <span>Nuestras oficinas se encuentran en:</span><br
+                        /><br />
+                        Circuito Juristas No. 8, Ciudad Satélite, Naucalpan de Juárez,
+                        Estado de México.
+                    </h2>
+                </div>
+                <!-- <div class="caja">
+                <h2>
+                    <span>Numero:</span><br /><br />
+                    +52-5654-920-263
+                </h2>
+            </div>
+            <div class="caja">
+                <h2>
+                    <span>Correo:</span><br /><br />
+                    azlo.deducible@gmail.com
+                </h2>
+            </div>
+             -->
+            </div>
+            <div class="flex">
+                <div class="tarjeta"></div>
+                <div class="contacto">
+                    <!--FORMULARIO -->
+                    <div class="contactito">
+                        <form
+                            action="mailto:azlo.deducible@gmail.com"
+                            method="post"
+                            enctype="text/plain">
+                            <label for="nombre"><span>Nombre</span></label>
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                required
+                            /><br /><br />
+                            <label for="correo"
+                                ><span>Correo</span><br /></label
+                            >
+                            <input
+                                type="email"
+                                id="correo"
+                                name="correo"
+                                required
+                            /><br /><br />
+
+                            <label for="mensaje"><span>Mensaje</span></label><br />
+                            <textarea
+                                id="mensaje"
+                                name="mensaje"
+                                rows="2"
+                                required></textarea><br />
+                            <div class="enviar">
+                                <input
+                                    type="submit"
+                                    value="Enviar"
+                                />
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- FORMULARIO -->
+                </div>
+            </div>
+        </body>
+    </Layout>
+</html>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    /*body {
+        margin: 0px;
+        padding: 0px;
+        font-family: ubuntu;
+        font-weight: 900;
+        width: 100%;
+        height: auto;
+        background-image: url("../img/ALFA-bg.jpg");
+        background-size: cover;
+        background-repeat: repeat-y;
+    }*/
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-family: ubuntu;
+        font-weight: 900;
+        width: 100%;
+        height: 170vh;
+        background-image: url("../img/ALFA-bg.jpg");
+        background-size: contain;
+        background-repeat: repeat-y;
+    }
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 170vh;
+        background-color: rgba(
+            0,
+            0,
+            0,
+            0.5
+        ); /* Ajusta el color y la opacidad aquí */
+        z-index: 1; /* Coloca la superposición sobre la imagen */
+    }
+    body > * {
+        position: relative;
+        z-index: 2; /* Asegura que el contenido esté encima de la superposición */
+    }
+    .header {
+        z-index: 3;
+    }
+
+    .titulo {
+        background-color: gold;
+        padding: 1em;
+        margin: auto;
+        margin-top: 3em;
+        text-align: center;
+    }
+    .caja {
+        width: 75%;
+        margin: auto;
+        margin-top: 3em;
+        height: auto;
+        background-color: gold;
+        padding: 1em;
+        border-radius: 1em;
+        text-align: center;
+    }
+
+    .tarjeta {
+        background-image: url("../img/Alfa_Front.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgb(0, 0, 0);
+        /*margin-top: 3em;
+        margin-bottom: 5em;*/
+        margin-right: 3.5em;
+        height: 300px;
+        width: 180px;
+        transition: 0.2s ease-in;
+        cursor: crosshair;
+    }
+    .tarjeta:hover {
+        transform: scale(1.5);
+    }
+    span {
+        text-shadow: 2px 1px 2px rgb(35, 35, 35);
+        padding: 0.5em;
+        color: whitesmoke;
+    }
+    .flex{
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    }
+    /*-- FORMULARIO --*/
+    .contactito {
+        text-align: center;
+        /*position: relative;
+        left: 25%;*/
+        width: 90%;
+        color: rgb(0, 6, 10);
+        /*margin-top: 3em;*/
+         font-size: 1.2em;
+    }
+    .contactito form nombre {
+        background-color: whitesmoke;
+        font-family: ubuntu;
+    }
+
+    .contactito form textarea,
+    .contactito form input {
+        font-family: ubuntu;
+        font-size: 1em;
+        font-weight: bold;
+        color: #000000;
+        width: 100%;
+        /*background: none;*/
+        border: none;
+        margin-top: .3em;
+        padding: .5em;
+        border-bottom: 5px solid gold;
+        border-radius: 1em;
+        background-color: rgb(237, 237, 237);
+    }
+
+     .enviar {
+      width: 100px;
+        border-radius: 1em;
+        margin: auto;
+        margin-top: 2em;
+        filter: sepia(100%);
+    }
+
+    @media (max-width:600px){
+        .contactito {
+        font-size: 1em;
+    }
+    .titulo h2{
+        font-size: 1em;
+    }
+    .texto-2 p{
+        font-size: 1em;
+    }
+    header h1{
+        font-size: 2.5em;
+    }
+    }
+
+    @media (max-width:450px){
+        .numeros p{
+        font-size: 1.2em;
+    }
+    .parrafo p{
+        font-size: 1.3em;
+    }
+    .ventasec p{
+        font-size: 1.2em;
+    }
+    .mail p{
+        font-size: 1.3em;
+    }
+    }
+    span {
+        text-shadow: 2px 1px 2px rgb(35, 35, 35);
+        padding: 0.5em;
+        color: whitesmoke;
+    }
+</style>
