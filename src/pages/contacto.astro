@@ -5,16 +5,15 @@ import Layout from "../layouts/Layout.astro";
 
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/svg+xml" href="/ALFALogo.png" /> 
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/ALFALogo.png" />
     </head>
     <Layout title="Contacto-ALFA">
         <div class="header">
             <Header />
         </div>
         <body>
-           
             <div class="titulo">
                 <h1>
                     <span
@@ -25,9 +24,9 @@ import Layout from "../layouts/Layout.astro";
                     <b
                         >¿Necesitas alguien que maneje tus números como un
                         artista maneja su lienzo?
-                    </b><br><br>
-                    Para eso esta ALFA Soluciones Contables, hacemos que la contabilidad sea algo más que
-                    números. ¡Hagamos que tus finanzas brillen!
+                    </b><br /><br />
+                    Para eso esta ALFA Soluciones Contables, hacemos que la contabilidad
+                    sea algo más que números. ¡Hagamos que tus finanzas brillen!
                 </h3>
             </div>
             <div class="grid">
@@ -35,8 +34,8 @@ import Layout from "../layouts/Layout.astro";
                     <h2>
                         <span>Nuestras oficinas se encuentran en:</span><br
                         /><br />
-                        Circuito Juristas No #8-A. Ciudad Satélite, Naucalpan de Juárez,
-                        Estado de México.
+                        Circuito Juristas No #8-A. Ciudad Satélite, Naucalpan de
+                        Juárez, Estado de México.
                     </h2>
                 </div>
                 <!-- <div class="caja">
@@ -53,6 +52,22 @@ import Layout from "../layouts/Layout.astro";
             </div>
              -->
             </div>
+            <div class="redestxt">
+                <h2><span>Nuestras Redes Sociales</span></h2>
+
+                <div class="redes">
+                    <h2 class="socialfb">Facebook</h2>
+                    <div class="logofb"></div>
+                    <h2 class="socialinsta">Instagram</h2>
+                    <a href="https://www.instagram.com/alfa.despacho?igsh=MTl5d2x5cGg3cnc3aQ==">
+                        <div class="logoinsta"></div>
+                    </a>
+                    <h2 class="sociallink">LinkedIn</h2>
+                    <a href="https://www.linkedin.com/company/alfa-soluciones-contables/">
+                        <div class="logolink"></div>
+                    </a>
+                </div>
+            </div>
             <div class="flex">
                 <div class="tarjeta"></div>
                 <div class="contacto">
@@ -61,7 +76,8 @@ import Layout from "../layouts/Layout.astro";
                         <form
                             action="mailto:azlo.deducible@gmail.com"
                             method="post"
-                            enctype="text/plain">
+                            enctype="text/plain"
+                        >
                             <label for="nombre"><span>Nombre</span></label>
                             <input
                                 type="text"
@@ -69,8 +85,7 @@ import Layout from "../layouts/Layout.astro";
                                 name="nombre"
                                 required
                             /><br /><br />
-                            <label for="correo"
-                                ><span>Correo</span><br /></label
+                            <label for="correo"><span>Correo</span><br /></label
                             >
                             <input
                                 type="email"
@@ -79,17 +94,15 @@ import Layout from "../layouts/Layout.astro";
                                 required
                             /><br /><br />
 
-                            <label for="mensaje"><span>Mensaje</span></label><br />
+                            <label for="mensaje"><span>Mensaje</span></label><br
+                            />
                             <textarea
                                 id="mensaje"
                                 name="mensaje"
                                 rows="2"
                                 required></textarea><br />
                             <div class="enviar">
-                                <input
-                                    type="submit"
-                                    value="Enviar"
-                                />
+                                <input type="submit" value="Enviar" />
                             </div>
                         </form>
                     </div>
@@ -99,13 +112,13 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </body>
     </Layout>
-</html>
-<style>
-    * {
-        margin: 0px;
-        padding: 0px;
-    }
-    /*body {
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /*body {
         margin: 0px;
         padding: 0px;
         font-family: ubuntu;
@@ -116,160 +129,305 @@ import Layout from "../layouts/Layout.astro";
         background-size: cover;
         background-repeat: repeat-y;
     }*/
-    body {
-        margin: 0px;
-        padding: 0px;
-        font-family: ubuntu;
-        font-weight: 900;
-        width: 100%;
-        height: 170vh;
-        background-image: url("../img/ALFA-bg.jpg");
-        background-size: contain;
-        background-repeat: repeat-y;
-    }
-    body::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 170vh;
-        background-color: rgba(
-            0,
-            0,
-            0,
-            0.5
-        ); /* Ajusta el color y la opacidad aquí */
-        z-index: 1; /* Coloca la superposición sobre la imagen */
-    }
-    body > * {
-        position: relative;
-        z-index: 2; /* Asegura que el contenido esté encima de la superposición */
-    }
-    .header {
-        z-index: 3;
-    }
-
-    .titulo {
-        background-color: gold;
-        background-image: url("../img/background2.png");
-        background-size: contain;
-        background-position: center;
-        padding: 1em;
-        margin: auto;
-        margin-top: 3em;
-        text-align: center;
-    }
-    .caja {
-        width: 75%;
-        margin: auto;
-        margin-top: 3em;
-        height: auto;
-        background-color: gold;
-        background-image: url("../img/background2.png");
-        background-size: contain;
-        background-position: center;
-        padding: 1em;
-        border-radius: 1em;
-        text-align: center;
-    }
-
-    .tarjeta {
-        background-image: url("../img/AlfaCard.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: rgb(0, 0, 0);
-        /*margin-top: 3em;
-        margin-bottom: 5em;*/
-        margin-right: 3.5em;
-        height: 300px;
-        width: 180px;
-        transition: 0.2s ease-in;
-        cursor:none;
-    }
-    .tarjeta:hover {
-        transform: scale(1.5);
-    }
-    span {
-        text-shadow: 2px 1px 2px rgb(35, 35, 35);
-        padding: 0.5em;
-        color: whitesmoke;
-    }
-    
-    .flex{
-    margin-top: 3em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-gap: 50px;
-    }
-    /*-- FORMULARIO --*/
-    .contactito {
-        text-align: center;
-        /*position: relative;
-        left: 25%;*/
-        width: 90%;
-        color: rgb(0, 6, 10);
-        /*margin-top: 3em;*/
-         font-size: 1.2em;
-    }
-    .contactito form nombre {
-        background-color: whitesmoke;
-        font-family: ubuntu;
-    }
-
-    .contactito form textarea,
-    .contactito form input {
-        font-family: ubuntu;
-        font-size: 1em;
-        font-weight: bold;
-        color: #000000;
-        width: 100%;
-        /*background: none;*/
-        border: none;
-        margin-top: .3em;
-        padding: .5em;
-        border-bottom: 5px solid gold;
-        border-radius: 1em;
-        background-color: rgb(237, 237, 237);
-        background-image: url("../img/background2.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-     .enviar {
-      width: 100px;
-        border-radius: 1em;
-        margin: auto;
-        margin-top: 2em;
-        filter: sepia(100%);
-    }
-    @media (max-width:620px){
-        .flex{
-            margin: 2em;
-        }
-        .tarjeta{
-           margin: auto;
-           margin-top: 3em;
-           background-color: black;
-        }
-        .contactito{
-            margin: auto;
-            margin-top: 5em;
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: ubuntu;
+            font-weight: 900;
             width: 100%;
+            height: 190vh;
+            background-image: url("../img/ALFA-bg.jpg");
+            background-size: contain;
+            background-repeat: repeat-y;
         }
-        body{
-            height: 220vh;
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 190vh;
+            background-color: rgba(
+                0,
+                0,
+                0,
+                0.5
+            ); /* Ajusta el color y la opacidad aquí */
+            z-index: 1; /* Coloca la superposición sobre la imagen */
         }
-        body::before{
-            height: 220vh;
+        body > * {
+            position: relative;
+            z-index: 2; /* Asegura que el contenido esté encima de la superposición */
         }
-    }
-    /*@media (max-width:600px){
+        .header {
+            z-index: 3;
+        }
+
+        .titulo {
+            background-color: gold;
+            background-image: url("../img/background2.png");
+            background-size: contain;
+            background-position: center;
+            padding: 1em;
+            margin: auto;
+            margin-top: 3em;
+            text-align: center;
+            font-size: 1.3em;
+            box-shadow:
+                7px 7px 0 rgb(225, 217, 217),
+                0 8px 3px #232323a1;
+        }
+        .caja {
+            width: 75%;
+            margin: auto;
+            margin-top: 3em;
+            height: auto;
+            background-color: gold;
+            background-image: url("../img/background2.png");
+            background-size: contain;
+            background-position: center;
+            padding: 1em;
+            border-radius: 1em;
+            text-align: center;
+            box-shadow:
+                7px 7px 0 rgb(225, 217, 217),
+                0 8px 3px #0000004d;
+        }
+
+        .tarjeta {
+            background-image: url("../img/AlfaCard.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: rgb(0, 0, 0);
+            /*margin-top: 3em;
+        margin-bottom: 5em;*/
+            margin-right: 3.5em;
+            height: 300px;
+            width: 180px;
+            transition: 0.1s ease-in;
+            cursor: none;
+        }
+        .tarjeta:hover {
+            transform: scale(1.5);
+        }
+        span {
+            text-shadow: 2px 1px 2px rgb(35, 35, 35);
+            padding: 0.5em;
+            color: whitesmoke;
+        }
+        .redestxt {
+            display: block;
+            padding: 1em;
+            width: 90%;
+            background-color: gold;
+            background-image: url("../img/background2.png");
+            background-size: contain;
+            margin: auto;
+            text-align: center;
+            margin-top: 2em;
+            border-radius: 1em;
+            box-shadow:
+                7px 7px 0 rgb(225, 217, 217),
+                0 8px 3px #0000004d;
+        }
+        .redestxt h2 span {
+            margin-bottom: 1.5em;
+            font-size: 1.5em;
+        }
+        .redes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            margin-top: 2em;
+        }
+        .socialfb {
+            text-shadow: 2px 1px 2px rgb(35, 35, 35);
+            padding: 0.5em;
+            margin: 1em;
+            border-radius: 1em;
+            color: whitesmoke;
+            background-color: gold;
+            cursor: pointer;
+            background-image: url("../img/background2.png");
+            background-size: contain;
+        }
+        .socialinsta {
+            text-shadow: 2px 1px 2px rgb(35, 35, 35);
+            padding: 0.5em;
+            margin: 1em;
+            border-radius: 1em;
+            color: whitesmoke;
+            background-color: gold;
+            cursor: pointer;
+            background-image: url("../img/background2.png");
+            background-size: contain;
+        }
+        .sociallink {
+            text-shadow: 2px 1px 2px rgb(46, 46, 46);
+            padding: 0.5em;
+            margin: 1em;
+            border-radius: 1em;
+            color: whitesmoke;
+            background-color: gold;
+            cursor: pointer;
+            background-image: url("../img/background2.png");
+            background-size: contain;
+        }
+        .socialfb:hover {
+            color: rgb(57, 57, 57);
+            text-shadow: 2px 3px 5px rgb(40, 58, 255);
+            transition: 0.25s all ease-in-out;
+        }
+
+        .socialinsta:hover {
+            color: rgb(57, 57, 57);
+            text-shadow: 2px 3px 5px rgb(217, 13, 249);
+            transition: 0.25s all ease-in-out;
+        }
+        .sociallink:hover {
+            color: rgb(57, 57, 57);
+            text-shadow: 2px 3px 5px rgb(84, 147, 255);
+            transition: 0.25s all ease-in-out;
+        }
+
+        .logofb {
+            width: 110px;
+            height: 110px;
+            background-image: url("../img/redes/facebooklogo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: 0.25s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .logofb:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .logoinsta {
+            width: 112px;
+            height: 112px;
+            background-image: url("../img/redes/instagramlogo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: 0.25s all cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .logoinsta:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .logolink {
+            width: 115px;
+            height: 115px;
+            background-image: url("../img/redes/linkedinlogo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: 0.25s all cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        .logolink:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        .flex {
+            margin-top: 3em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-gap: 50px;
+        }
+        /*-- FORMULARIO --*/
+        .contactito {
+            text-align: center;
+            /*position: relative;
+        left: 25%;*/
+            width: 90%;
+            color: rgb(0, 6, 10);
+            /*margin-top: 3em;*/
+            font-size: 1.2em;
+        }
+        .contactito form nombre {
+            background-color: whitesmoke;
+            font-family: ubuntu;
+        }
+
+        .contactito form textarea,
+        .contactito form input {
+            font-family: ubuntu;
+            font-size: 1em;
+            font-weight: bold;
+            color: #000000;
+            width: 100%;
+            /*background: none;*/
+            border: none;
+            margin-top: 0.3em;
+            padding: 0.5em;
+            border-bottom: 5px solid gold;
+            border-radius: 1em;
+            background-color: rgb(237, 237, 237);
+            background-image: url("../img/background2.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .enviar {
+            width: 100px;
+            border-radius: 1em;
+            margin: auto;
+            margin-top: 2em;
+            filter: sepia(100%);
+        }
+        @media (max-width: 620px) {
+            .flex {
+                margin: 2em;
+            }
+            .tarjeta {
+                margin: auto;
+                margin-top: 3em;
+                background-color: black;
+            }
+            .contactito {
+                margin: auto;
+                margin-top: 5em;
+                width: 100%;
+            }
+            body {
+                height: 300vh;
+            }
+            body::before {
+                height: 300vh;
+            }
+            .redestxt {
+                width: 80%;
+            }
+            .logofb {
+                width: 85px;
+                height: 85px;
+            }
+            .logoinsta {
+                width: 85px;
+                height: 90px;
+            }
+            .logolink {
+                width: 85px;
+                height: 85px;
+            }
+            .socialfb {
+                margin: 1.2em;
+            }
+            .socialinsta {
+                margin: 1.2em;
+            }
+            .sociallink {
+                margin: 1.2em;
+            }
+        }
+        /*@media (max-width:600px){
         .contactito {
         font-size: 1em;
     }
@@ -284,7 +442,7 @@ import Layout from "../layouts/Layout.astro";
     }
     }
 */
-    /*@media (max-width:450px){
+        /*@media (max-width:450px){
         .numeros p{
         font-size: 1.2em;
     }
@@ -298,9 +456,12 @@ import Layout from "../layouts/Layout.astro";
         font-size: 1.3em;
     }
     }*/
-    span {
-        text-shadow: 2px 1px 2px rgb(35, 35, 35);
-        padding: 0.5em;
-        color: whitesmoke;
-    }
-</style>
+        span {
+            text-shadow: 2px 1px 2px rgb(35, 35, 35);
+            padding: 0.5em;
+            color: whitesmoke;
+        }
+    </style>
+
+
+</html>
